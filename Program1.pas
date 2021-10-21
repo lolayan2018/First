@@ -6,8 +6,6 @@ begin
     result := False;
 end;
 
-function SecondsInMinute():= 60;
-
 
 begin
 
