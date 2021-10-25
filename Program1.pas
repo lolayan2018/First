@@ -27,6 +27,15 @@ begin
     result:= 365;
 end;
 
+function DaysInYearRange(a, b: integer): integer;
+begin
+  var c := 0;
+  for var i := a to b do
+  begin
+    c += DaysInYear(i);
+  end;
+  result := c;
+end;
 
 begin
 
