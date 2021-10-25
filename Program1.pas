@@ -6,6 +6,18 @@ begin
     result := False;
 end;
 
+function LaterInYear(x, y:real): real;
+begin
+  if (x - x.Trunc()) >  (y - y.Trunc()) then
+    result := x
+  else if (x - x.Trunc()) <  (y - y.Trunc()) then
+    result := y
+  else 
+    if x.Trunc() >  y.Trunc() then
+      result := x
+    else
+      result := y;
+end;
 
 begin
 
