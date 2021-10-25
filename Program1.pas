@@ -19,6 +19,15 @@ begin
       result := y;
 end;
 
+function DaysInYear(y: integer): integer;
+begin
+  if IsLeapYear(y) then 
+    result:= 366
+   else 
+    result:= 365;
+end;
+
+
 begin
 
 end.
